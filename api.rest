@@ -1,0 +1,41 @@
+### Send request
+
+PUT http://localhost:8181/contact/0
+Content-Type: application/json
+
+{
+  "name": "test0",
+  "phone": "0000"
+}
+###
+
+GET http://localhost:8181/contacts/list
+
+###
+
+GET http://localhost:8181/contact/0
+
+###
+
+POST http://localhost:8181/contact
+Content-Type: application/json
+
+{
+  "name": "test2",
+  "phone": "2222"
+}
+###
+
+DELETE http://localhost:8181/contact/0
+
+###
+
+GET http://localhost:8182/users
+Content-Type: application/json
+
+{
+  "name": "999",
+  "phone": "content"
+}
+
+###
